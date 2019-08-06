@@ -1,15 +1,111 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+body {
+    margin: 0;
+    background: #e2e1e0;
+}
+
+
+h1, h3, p {
+  font-family: 'Beth Ellen', cursive;
+  color: #2c3e50
+}
+button:focus {
+    outline:0;
+}
+.button-delete {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    background: #eb4d4b;
+    color: #fafafa;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button-show {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    background: #3498db;
+    color: #fafafa;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button-back {
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 12px;
+    background: #34495e;
+    color: #fafafa;
+    border: 1px solid transparent;
+    padding: 10px 30px;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.11), 0 1px 2px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.navbar {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);     
+    padding: 2px;
+    text-align: center;
+    background: #fafafa;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-control {
+    border: 1px solid transparent;
+    padding: 40px;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+.card-show {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 30%;
+    padding: 25px;
+}
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 24px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+    box-shadow: 0 3px 5px rgba(0,0,0,0.14), 0 3px 6px rgba(0,0,0,0.22);
+}
+
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.22);
+}
+
+
